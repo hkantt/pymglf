@@ -1,2 +1,2 @@
-# pymglf
+# PyMGLF
 Python ModernGL Framework
