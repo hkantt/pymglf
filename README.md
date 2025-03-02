@@ -1,9 +1,12 @@
 # PyMGLF
 Python ModernGL Framework v1.0 <br>
-In development since: 1st March, 2025 <br> <br>
-![Image](https://github.com/user-attachments/assets/c84288bf-ecc1-401b-b288-d42472a9d061)
+In development since: 1st March, 2025
 
 ## About
+<br>
+
+![Image](https://github.com/user-attachments/assets/c84288bf-ecc1-401b-b288-d42472a9d061)
+<br> <br>
 This is an attempt to create a structured framework for development 
 of applications of any complexity within Python. This framework uses
 ModernGL as an interface between Python and the GPU and ModernGL Window
