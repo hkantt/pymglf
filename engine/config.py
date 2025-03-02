@@ -1,7 +1,4 @@
 
-# PyMGLF - by @hkantt
-# Python ModernGL Framework
-
 # System libraries
 import sys
 import math
@@ -9,7 +6,6 @@ import time
 import random
 import pathlib
 import json
-import types
 
 # Other libraries
 import moderngl as mgl
