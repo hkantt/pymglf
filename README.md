@@ -47,5 +47,13 @@ The following dependencies are required to run PyMGLF:
 2. ModernGL Window: ```pip install moderngl-window```
 3. ImGui Bundle: ```pip install imgui-bundle```
 
+## Credits
+This project uses [ModernGL](https://github.com/moderngl/moderngl), which is licensed under the MIT License.
+Copyright (c) 2017-2024 Szabolcs Dombi, Einar Forselv<br>
+This project uses [ModernGL Window](https://github.com/moderngl/moderngl-window), which is licensed under the MIT License.
+Copyright (c) 2019 ModernGL Members and Contributors<br>
+This project uses [ImGui Bundle](https://github.com/pthom/imgui_bundle), which is licensed under the MIT License.
+Copyright (c) 2021-2023 Pascal Thomet
+
 ## Licensing
 PyMGLF is open-source and can be used for private/commercial purposes given that you include the LICENSE in your project.
