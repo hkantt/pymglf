@@ -1,6 +1,6 @@
 # PyMGLF
 Python ModernGL Framework v1.0 <br>
-In development since: 1st March, 2025
+In development since: 1st March, 2025 <br>
 ![Image](https://github.com/user-attachments/assets/c84288bf-ecc1-401b-b288-d42472a9d061)
 
 ## About
