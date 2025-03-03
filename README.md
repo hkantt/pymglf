@@ -6,8 +6,7 @@ In development since: 1st March, 2025
 This is an attempt to create a structured framework for development 
 of applications of any complexity within Python. This framework uses
 ModernGL as an interface between Python and the GPU and GLFW for
-window management, event handling and resource management. ImGui
-support has been provided.
+window management and event handling. ImGui support has been provided.
 
 ## Installation
 PyMGLF shall be cloned/downloaded and extracted as it is. This is NOT a Python library.<br>
