@@ -15,6 +15,8 @@ The following dependencies are required to run PyMGLF:
 1. ModernGL: ```pip install moderngl```
 2. GLFW: ```pip install glfw```
 3. ImGui (with GLFW integrations): ```pip install imgui[glfw]```
+4. Pyrr: ```pip install pyrr```
+5. Pygame-CE (For audio playback): ```pip install pygame-ce```
 
 ## Credits
 This project uses [moderngl](https://github.com/moderngl/moderngl), which is licensed under the MIT License.
