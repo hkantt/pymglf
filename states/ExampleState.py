@@ -19,7 +19,8 @@ class ExampleState(State):
         imgui.text(str(Event.bstate))
         imgui.text(str(Event.kstate))
         imgui.text(str(Cursor.xoffset) + " " + str(Cursor.yoffset))
+        if imgui.button("Load"):
+            file_path = tk_filedialog.askopenfilename(title="Select a file", filetypes=[("All files", "*.*")])
         imgui.end()
 
 Core.add(ExampleState)
-Core.activate("ExampleState")
