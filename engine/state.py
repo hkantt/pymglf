@@ -13,6 +13,10 @@ class State:
         """Called everytime the state is activated"""
         pass
 
+    def exit(self):
+        """Called on the exiting state when a new state is queued for activation"""
+        pass
+
     def events(self):
         """Identify events and take actions"""
         pass
@@ -27,8 +31,4 @@ class State:
 
     def render_ui(self):
         """Secondary render function"""
-        pass
-
-    def exit(self):
-        """Called on the exiting state when a new state is queued for activation"""
         pass

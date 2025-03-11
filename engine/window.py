@@ -2,11 +2,28 @@
 from .libs import *
 
 
+class Clock:
+
+    time = 0.016
+    dt = 0.016
+    dt_sq = dt * dt
+    _last_time = 0
+
+    @classmethod
+    def process(cls):
+        cls.time = glfw.get_time()
+        cls.dt = cls.time - cls._last_time
+        cls.dt_sq = cls.dt * cls.dt
+        cls._last_time = cls.time
+
+
 class Window:
 
     _window = None
     gl_major = 3
     gl_minor = 3
+
+    w, h, hw, hh, qw, qh = 0, 0, 0, 0, 0, 0
 
     @classmethod
     def set_opengl_version(cls, major: int, minor: int):
@@ -15,6 +32,9 @@ class Window:
 
     @classmethod
     def create(cls, width: int, height: int, title: str):
+        cls.w, cls.h = width, height
+        cls.hw, cls.hh = width // 2, height // 2
+        cls.qw, cls.qh = width // 4, height // 4
         glfw.init()
         glfw.window_hint(glfw.CONTEXT_VERSION_MAJOR, cls.gl_major)
         glfw.window_hint(glfw.CONTEXT_VERSION_MINOR, cls.gl_minor)

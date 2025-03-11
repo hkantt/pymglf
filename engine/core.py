@@ -53,6 +53,12 @@ class Core:
 
     @classmethod
     def run(cls):
+        # Enable High DPI awareness (makes the window sharper)
+        try:
+            ctypes.windll.shcore.SetProcessDpiAwareness(1)  # For Windows 8.1 or later
+        except AttributeError:
+            pass  # Ignore if the function is not available
+        pgmix.init()
         cls.ctx = mgl.create_context()
         imgui.create_context()
         cls.impl = GlfwRenderer(Window._window)
@@ -80,6 +86,7 @@ class Core:
     @classmethod
     def process(cls):
         """CPU based calculations"""
+        Clock.process()
         if cls.active_s:
             cls.active_s.process()
 
