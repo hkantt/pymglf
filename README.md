@@ -1,4 +1,4 @@
-# PyMGLF (Example Project)
+# PyMGLF (Integration Example)
 Python ModernGL Framework v1.0.0 <br>
 In development since: 1st March, 2025
 
